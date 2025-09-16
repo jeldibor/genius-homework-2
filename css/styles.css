@@ -18,6 +18,7 @@ h5,
 h6,
 p {
 	margin-top: 0;
+	font-family: 'Play', sans-serif;
 }
 
 a {
@@ -32,7 +33,7 @@ a {
 }
 
 body {
-	font-family: 'Roboto' sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	color: var(--color-primary-dark);
@@ -75,6 +76,7 @@ ul {
 .button:hover {
 	background-color: transparent;
 	color: var(--color-primary-dark);
+	border: 2px solid var(--color-primary);
 }
 
 .link {
@@ -135,13 +137,11 @@ ul {
 
 .hero-bottom {
 	padding: 0 0 127px 0;
+	margin: 0;
 	max-width: 300px;
 }
 
 /*секція 2*/
-.about-section {
-	padding-top: 40px;
-}
 
 .about-and-photo {
 	display: flex;
@@ -154,6 +154,7 @@ ul {
 .flex-text {
 	flex: 1; /* займає половину */
 	max-width: 50%; /* щоб точно не більше половини */
+	padding-top: 40px;
 }
 
 /* Права колонка — фото */
@@ -166,9 +167,8 @@ ul {
 	justify-content: space-between; /* одна картинка вгорі, інша внизу */
 	height: 100%; /* щоб блок тягнувся на всю висоту */
 	row-gap: 40px;
-	margin-top: -40px;
 }
-..flex-images img {
+.flex-images img {
 	max-width: 100%;
 	height: auto;
 }
@@ -225,6 +225,12 @@ ul {
 	padding: 24px 32px;
 }
 
+.mini-icon {
+	width: 48px;
+	height: 48px;
+	text-align: center;
+}
+
 .robbing-title {
 	font-size: 64px;
 	font-weight: 700;
@@ -271,6 +277,7 @@ ul {
 	background-color: transparent;
 	border: 1px solid var(--color-primary-dark);
 	cursor: pointer;
+	flex-shrink: 0;
 }
 
 .carousel-button:hover {
@@ -363,6 +370,19 @@ ul {
 	color: var(--color-primary);
 }
 
+.style-block {
+	display: flex;
+	width: 192px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.flex-footer-icon {
+	display: flex;
+	column-gap: 24px;
+}
+
 .footer-icon {
 	fill: #fff;
 }
@@ -371,5 +391,4 @@ ul {
 	font-size: 13px;
 	font-weight: 400;
 	color: #747272;
-	padding-top: 16px;
 }

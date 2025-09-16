@@ -7,7 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/styles.css" />
@@ -64,7 +64,7 @@
 					</p>
 				</div>
 			</section>
-			<section class="section about-section">
+			<section>
 				<div class="container about-and-photo">
 					<div class="flex-text">
 						<h2 class="about-clinic">
@@ -106,6 +106,11 @@
 					<ul class="robbing-list">
 						<li class="robbing-one list-style">
 							<article>
+								<img
+									class="mini-icon"
+									src="./img/icons-01.jpg"
+									alt="перша іконка"
+								/>
 								<p>Всі наші косметологи мають</p>
 								<p>вищу медичну освіту</p>
 								<p>та стаж роботи від 5 років</p>
@@ -113,6 +118,11 @@
 						</li>
 						<li class="robbing-two list-style">
 							<article>
+								<img
+									class="mini-icon"
+									src="./img/icons-02.jpg"
+									alt="друга іконка"
+								/>
 								<p>Використовуємо тільки</p>
 								<p>професійне обладнання та</p>
 								<p>косметику, перевірену часом</p>
@@ -120,6 +130,11 @@
 						</li>
 						<li class="robbing-three list-style">
 							<article>
+								<img
+									class="mini-icon"
+									src="./img/icons-03.jpg"
+									alt="третя іконка"
+								/>
 								<p>Наша мета - підкреслити</p>
 								<p>переваги та приховати</p>
 								<p>недоліки, а не переробити</p>
@@ -169,7 +184,9 @@
 							referrerpolicy="no-referrer-when-downgrade"
 						></iframe>
 						<div class="form">
-							<button class="button" type="button">Замовити дзвінок</button>
+							<button class="button hero-button" type="button">
+								Замовити дзвінок
+							</button>
 						</div>
 					</div>
 				</div>
@@ -182,7 +199,7 @@
 						<a href="/"><img src="./img/logo.svg" alt="Beauti zone" /></a>
 					</div>
 					<div class="footer-nav">
-						<ul>
+						<ul class="style-block">
 							<li class="link">Про нас</li>
 							<li class="link">Чому ми</li>
 							<li class="link">Наші процедури</li>
@@ -192,7 +209,7 @@
 				</nav>
 				<address class="footer-address">
 					<div>
-						<ul>
+						<ul class="style-block">
 							<li>
 								<a class="address-link" href="tel:0960000007"
 									>+ 38 (096) 000 00 07</a
@@ -210,30 +227,32 @@
 									>Україна, м. Київ, вул. Тараса Шевченка 5</a
 								>
 							</li>
-							<li>
-								<a href="#">
-									<svg class="footer-icon" width="42" height="42">
-										<use href="./img/sprite-icons.svg#icon-telephone"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<svg class="footer-icon" width="42" height="42">
-										<use href="./img/sprite-icons.svg#icon-facebook"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<svg class="footer-icon" width="42" height="42">
-										<use href="./img/sprite-icons.svg#icon-instagram"></use>
-									</svg>
-								</a>
-							</li>
+							<div class="flex-footer-icon">
+								<li>
+									<a href="#">
+										<svg class="footer-icon" width="42" height="42">
+											<use href="./img/sprite-icons.svg#icon-telephone"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg class="footer-icon" width="42" height="42">
+											<use href="./img/sprite-icons.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg class="footer-icon" width="42" height="42">
+											<use href="./img/sprite-icons.svg#icon-instagram"></use>
+										</svg>
+									</a>
+								</li>
+							</div>
 						</ul>
 					</div>
-					<div>
+					<div class="style-block">
 						<a class="address-link" href="#">Політика конфіденційності</a>
 						<p class="address-copyright">&copy;2022 Дані захищені</p>
 					</div>
